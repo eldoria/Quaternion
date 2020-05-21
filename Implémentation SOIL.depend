@@ -266,9 +266,13 @@
 	"SOIL.h"
 	"Camera.h"
 
-1590082435 d:\projets_jeux\quaternion\include\quaternion.h
+1590082559 d:\projets_jeux\quaternion\include\quaternion.h
 
 1590075496 source:d:\projets_jeux\quaternion\src\map.cpp
 	"Map.h"
 	"Block.h"
+
+1590082559 source:d:\projets_jeux\quaternion\src\quaternion.cpp
+	"Quaternion.h"
+	<math.h>
 
