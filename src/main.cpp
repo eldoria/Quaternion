@@ -8,6 +8,7 @@
 
 #include "Camera.h"
 #include "Map.h"
+#include "Quaternion.h"
 
 
 // Objet Camera
@@ -156,6 +157,11 @@ void LoadTextures()
 
 int main(int argc, char **argv)
 {
+
+    //Quaternion quat = new Quaternion(5,5,5,5);
+
+
+
     /** CREATION FENETRE **/
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);

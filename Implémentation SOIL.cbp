@@ -15,6 +15,9 @@
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add library="../../3DJV/implémentation SOIL/Implémentation SOIL/lib/libSOIL.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Implémentation SOIL" prefix_auto="1" extension_auto="1" />
@@ -47,13 +50,11 @@
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Map.h" />
 		<Unit filename="include/Quaternion.h" />
-		<Unit filename="include/quaternion.h" />
 		<Unit filename="src/Block.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Quaternion.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/quaternion.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
