@@ -211,11 +211,11 @@
 	"SOIL.h"
 	"Camera.h"
 
-1589997758 source:c:\users\user\documents\ecole\esgi\maths\implémentation soil\src\quaternion.cpp
+1590084307 source:c:\users\user\documents\ecole\esgi\maths\implémentation soil\src\quaternion.cpp
 	"Quaternion.h"
 	<math.h>
 
-1590075454 c:\users\user\documents\ecole\esgi\maths\implémentation soil\include\quaternion.h
+1590084345 c:\users\user\documents\ecole\esgi\maths\implémentation soil\include\quaternion.h
 
 1589823614 source:c:\users\user\documents\ecole\esgi\maths\implémentation soil\src\main.cpp
 	<stdlib.h>

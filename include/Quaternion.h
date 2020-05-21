@@ -16,6 +16,7 @@ class Quaternion
         void normaliser();
 
         float* QuaternionToMatrix();
+        Quaternion MatrixToQuaternion(float* matrix);
 
         Quaternion soustraction(Quaternion Q1, Quaternion Q2);
         Quaternion addition(Quaternion Q1, Quaternion Q2);

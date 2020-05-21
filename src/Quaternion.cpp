@@ -52,6 +52,43 @@ float* Quaternion::QuaternionToMatrix(){
 }
 
 
+Quaternion Quaternion::MatrixToQuaternion(float* matrix){
+    float tr = matrix[0] + matrix[4] + matrix[8];
+
+    float x,y,z,w,S;
+
+    if (tr > 0){
+        S = sqrt(tr + 1.0) * 2;
+        w = 0.25 * S;
+        x = (matrix[7] - matrix[5]) / S;
+        y = (matrix[2] - matrix[6]) / S;
+        z = (matrix[3] - matrix[1]) / S;
+    }
+    else if((matrix[0] > matrix[4])&(matrix[0] > matrix[8])){
+        S = sqrt(1 + matrix[0] - matrix[4] - matrix[8]) * 2;
+        w = (matrix[7] - matrix[5]) / S;
+        x = 0.25 * S;
+        y = (matrix[1] * matrix[3]) / S;
+        z = (matrix[2] * matrix[6]) / S;
+    }
+    else if (matrix[4] > matrix[8]){
+        S = sqrt(1.0 + matrix[4] - matrix[0] - matrix[8]) * 2;
+        w = (matrix[2] - matrix[6]) / S;
+        x = (matrix[1] + matrix[3]) / S;
+        y = 0.25 * S;
+        z = (matrix[5] + matrix[7]) / S;
+    }
+    else{
+        S = sqrt(1.0 + matrix[8] - matrix[0] - matrix[4]) * 2;
+        w = (matrix[3] - matrix[1]) / S;
+        x = (matrix[2] + matrix[6]) / S;
+        y = (matrix[5] + matrix[7]) / S;
+        z = 0.25 * S;
+    }
+    return Quaternion(w,x,y,z);
+}
+
+
 void Quaternion::normaliser(){
     float norm = norme();
 
