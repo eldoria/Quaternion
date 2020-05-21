@@ -21,6 +21,8 @@ class Quaternion
         Quaternion addition(Quaternion Q1, Quaternion Q2);
         Quaternion multiplication(Quaternion Q1, Quaternion Q2);
         Quaternion conjugue(Quaternion Q);
+        float Dotproduct(Quaternion Q1, Quaternion Q2);
+        float Crossproduct(Quaternion Q1, Quaternion Q2);
 
     protected:
 

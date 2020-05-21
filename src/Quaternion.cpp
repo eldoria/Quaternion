@@ -98,3 +98,22 @@ Quaternion Quaternion::conjugue(Quaternion Q) {
     return Quaternion(-Q.getX(),-Q.getY(),-Q.getZ(),Q.getW());
 
 }
+
+float Quaternion::Dotproduct(Quaternion Q1, Quaternion Q2){
+    ///retourne le produit scalaire de Q1 et Q2
+
+    float scal = (Q1.getY() * Q2.getY()) + (Q1.getZ() * Q2.getZ()) + (Q1.getW() * Q2.getW());
+    return scal;
+
+}
+
+float Quaternion::Crossproduct(Quaternion Q1, Quaternion Q2){
+    ///retourne le produit vectoriel de Q1 et Q2
+
+    float x = (Q1.getZ() * Q2.getW()) - (Q1.getW() * Q2.getZ());
+    float y = (Q1.getW() * Q2.getY()) - (Q1.getY() * Q2.getW());
+    float z = (Q1.getY() * Q2.getZ()) - (Q1.getZ() * Q2.getY());
+    float crossed = (x, y, z);
+    return crossed;
+
+}
