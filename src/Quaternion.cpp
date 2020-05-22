@@ -139,7 +139,7 @@ Quaternion Quaternion::conjugue(Quaternion Q) {
 float Quaternion::Dotproduct(Quaternion Q1, Quaternion Q2){
     ///retourne le produit scalaire de Q1 et Q2
 
-    float scal = (Q1.getY() * Q2.getY()) + (Q1.getZ() * Q2.getZ()) + (Q1.getW() * Q2.getW());
+    float scal = (Q1.getY() * Q2.getY()) + (Q1.getZ() * Q2.getZ()) + (Q1.getW() * Q2.getW() + Q1.getX() * Q2.getX());
     return scal;
 
 }
