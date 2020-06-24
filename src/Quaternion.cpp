@@ -2,6 +2,7 @@
 #include <math.h>
 
 #define square(x) x * x
+#define n 3
 
 Quaternion::Quaternion(float x, float y, float z, float w)
 {
@@ -136,21 +137,24 @@ Quaternion Quaternion::conjugue(Quaternion Q) {
 
 }
 
-float Quaternion::Dotproduct(Quaternion Q1, Quaternion Q2){
-    ///retourne le produit scalaire de Q1 et Q2
+int Quaternion::Dotproduct(int vect1[],int vect2[]){
+    ///retourne le produit scalaire 2 vecteur
 
-    float scal = (Q1.getY() * Q2.getY()) + (Q1.getZ() * Q2.getZ()) + (Q1.getW() * Q2.getW() + Q1.getX() * Q2.getX());
-    return scal;
+    int product = 0;
+    for (int i = 0; i<n; i++)
+        product = product+vect1[i]*vect2[i];
+    return product;
+
 
 }
 
-float Quaternion::Crossproduct(Quaternion Q1, Quaternion Q2){
-    ///retourne le produit vectoriel de Q1 et Q2
+int Quaternion::Crossproduct(int vect1[],int vect2[]){
+    ///retourne le produit vectoriel 2 vecteur
 
-    float x = (Q1.getZ() * Q2.getW()) - (Q1.getW() * Q2.getZ());
-    float y = (Q1.getW() * Q2.getY()) - (Q1.getY() * Q2.getW());
-    float z = (Q1.getY() * Q2.getZ()) - (Q1.getZ() * Q2.getY());
-    float crossed = (x, y, z);
-    return crossed;
+    int x = (vect1[1]*vect2[2]-vect1[2]*vect2[1]);
+    int y = (vect1[0]*vect2[2]-vect1[2]*vect2[0]);
+    int z = (vect1[0]*vect2[1]-vect1[1]*vect2[0]);
+    int scal = (x, y, z);
+    return scal;
 
 }
