@@ -4,12 +4,19 @@
 #define MOVE_SPEED 0.1f
 #define SENSIBILITY 0.005f
 
+#include <glm/glm.hpp>
+#include <glm/gtx/transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+
+
 class Camera
 {
     public:
         Camera();
 
         char locked;
+        char ifLookat;
 
         float posx;
         float posy;
@@ -26,7 +33,6 @@ class Camera
         void releaseCam(void);
         void grabCam(int x, int y);
         void orienterCam(int x, int y);
-
 
     protected:
     private:

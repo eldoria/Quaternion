@@ -1,5 +1,7 @@
 #include "Block.h"
 
+float val;
+
 Block::Block()
 {
     posx = 0.0f;
@@ -181,6 +183,8 @@ void Block::Draw()
     gluQuadricTexture(params,GL_TRUE);
     glPushMatrix();
     glTranslatef(10,10,10);
+    glRotatef(val,0,10,0);
+    val += .1;
     gluSphere(params,5,100,100);
     glPopMatrix();
 }

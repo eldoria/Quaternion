@@ -278,13 +278,17 @@
 
 1589636486 c:\users\user\desktop\maths_quaternion\quaternion-master\include\soil.h
 
-1589636486 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\camera.cpp
+1592999163 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\camera.cpp
 	"Camera.h"
 	<math.h>
+	"Block.h"
 
-1589636486 c:\users\user\desktop\maths_quaternion\quaternion-master\include\camera.h
+1592999171 c:\users\user\desktop\maths_quaternion\quaternion-master\include\camera.h
+	<glm/glm.hpp>
+	<glm/gtx/transform.hpp>
+	<glm/gtc/type_ptr.hpp>
 
-1589636486 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\main.cpp
+1592999177 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -300,7 +304,68 @@
 	"SOIL.h"
 	"Camera.h"
 
-1589636486 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\map.cpp
+1590071645 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\map.cpp
 	"Map.h"
 	"Block.h"
+
+1589998793 source:c:\users\user\desktop\maths_quaternion\quaternion-master\src\quaternion.cpp
+	"Quaternion.h"
+	<math.h>
+
+1589998778 c:\users\user\desktop\maths_quaternion\quaternion-master\include\quaternion.h
+
+1589636486 c:\users\user\desktop\maths_quaternion\quaternion-master\src\block.cpp
+	"Block.h"
+
+1593013715 source:c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\src\block.cpp
+	"Block.h"
+
+1589636486 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\block.h
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+
+1589636486 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1589636486 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\soil.h
+
+1592999164 source:c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\src\camera.cpp
+	"Camera.h"
+	<math.h>
+	"Block.h"
+
+1592999172 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\camera.h
+	<glm/glm.hpp>
+	<glm/gtx/transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1592999178 source:c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\src\main.cpp
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+	"Camera.h"
+	"Map.h"
+
+1589636486 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\map.h
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+	"Camera.h"
+
+1590071646 source:c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\src\map.cpp
+	"Map.h"
+	"Block.h"
+
+1589998794 source:c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\src\quaternion.cpp
+	"Quaternion.h"
+	<math.h>
+
+1589998780 c:\users\user\documents\ecole\esgi\maths\maths_quaternion\maths_quaternion\quaternion-master\include\quaternion.h
 

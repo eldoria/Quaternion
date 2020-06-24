@@ -17,6 +17,7 @@ Map *m = new Map();
 
 
 
+
 /** GESTION FENETRE **/
 void reshapeWindow(int w, int h)
 {
@@ -41,6 +42,8 @@ void KeyboardDown(unsigned char key, int xx, int yy)
     case 'e': // Unlock Camera
         cam->locked = (cam->locked)?0:1;
         break;
+    case 'a' :
+        cam->ifLookat = (cam->ifLookat)?0:1;
     case 'z':
         cam->deltaForward = 1;
         break;

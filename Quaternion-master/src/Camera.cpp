@@ -1,5 +1,8 @@
 #include "Camera.h"
 #include <math.h>
+#include"Block.h"
+
+Block *block = new Block();
 
 Camera::Camera()
 {
@@ -24,7 +27,7 @@ Camera::Camera()
     deltaAngley = 0.0f;
 
 
-
+    ifLookat = 1;
     locked = 1;
 }
 
@@ -32,25 +35,27 @@ void Camera::updatePos()
 {
     if (deltaForward || deltaStrafe)
     {
+
         if (locked)
         {
-            posx += deltaForward * (dirx/cos(anglev + deltaAngley)) * MOVE_SPEED;
-            posy = 1.5f;
-            posz += deltaForward * (dirz/cos(anglev + deltaAngley)) * MOVE_SPEED;
-            posx += deltaStrafe * (dirz/cos(anglev + deltaAngley)) * MOVE_SPEED;
-            posz -= deltaStrafe * (dirx/cos(anglev + deltaAngley)) * MOVE_SPEED;
 
-        }
-        else
-        {
             posx += deltaForward * dirx * MOVE_SPEED;
             posy += deltaForward * diry * MOVE_SPEED;
             posz += deltaForward * dirz * MOVE_SPEED;
             posx += deltaStrafe * dirz * MOVE_SPEED;
             posz -= deltaStrafe * dirx * MOVE_SPEED;
+
+        }
+        else
+        {
+            posx = block->posx + 1.f;
+            posy = block->posy + 2.5f;
+            posz = block->posz + 8.f;
+
         }
     }
 }
+
 
 void Camera::orienterCam(int x, int y)
 {
